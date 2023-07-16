@@ -1,0 +1,56 @@
+{
+  "name": "zentvicons",
+  "version": "0.0.2",
+  "description": "Vue3 SVG icon components integrated from [`zenticons`](https://github.com/zent-contrib/zenticons)",  
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./es/index.d.ts",
+      "import": "./es/index.js",
+      "require": "./lib/index.js"
+    }
+  },
+  "unpkg": "dist/index.js",
+  "jsdelivr": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf lib es dist",
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "build:icons": "pnpm run clean && node ./scripts/build.js"
+  },
+  "author": "frank",
+  "license": "MIT",
+  "files":[
+    "es",
+    "lib",
+    "dist"
+  ],
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "css-render": "^0.15.8",
+    "execa": "^5.0.0",
+    "fs-extra": "^9.0.7",
+    "lodash": "^4.17.21",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.0.2",
+    "v2s": "^0.2.3",
+    "vite": "^4.3.9",
+    "vue": "^3.2.47",
+    "vue-template-compiler": "2.6.12",
+    "vue-tsc": "^1.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frank201113/zentvicons"
+  },  
+  "keywords": [
+    "icon",
+    "vue-next",
+    "vue",
+    "svg",
+    "zenticons"
+  ]  
+}
